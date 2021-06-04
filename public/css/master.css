@@ -1,0 +1,185 @@
+:root {
+    --main-blue: rgb(1,163,212);
+    --main-gray: rgb(152,152,152);
+  }
+.mobile-nav{
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Header styles  */
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;  
+        align-items: center;      
+        align-content: center;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    nav a p{
+        font-size: 1.2rem;
+    }
+    #nav-underline{
+        width: 80%;
+    }
+    .logo-wrapper img{
+        position: absolute;
+        width: 15%;
+        transform: translate(20%, 4%);
+    }
+    .nav-wrapper{
+        position: absolute;
+        width: 80%;        
+        right: 4%;
+        top: 50px;
+    }
+    .desktop-head-wrapper{
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 180px;
+    }
+    .anchors-wrapper{
+        position: relative;
+        width: 100%;        
+        background-color: rgba(1,163,212,0.2);
+        text-align: center;
+        border-radius: 40% 0 0 40%;
+    }
+    .anchors{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .anchors a{
+        text-decoration: none;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: rbga(152,152,152,0.5);
+    }
+    .anchors a p{
+        font-size: 1.2rem;
+    }
+    .about-us-home-wrapper{
+        width: 100%;
+        background-color: rgba(152,152,152,0.2);
+        margin: 0;
+        padding: 10px;
+    }
+    .about-us-home{
+        text-align: center;
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;        
+    }
+
+    /* what we do btns */
+    .what-we-do-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 12px;
+        margin: 120px auto;
+        width: 75%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+        }
+    .what-we-do-btn{
+        position: relative;
+        width: 280px;
+        height: 280px;       
+        background-color: rbga(152,152,152,0.3);
+        border: 3px solid black;
+        border-radius: 18%;
+        overflow: hidden;
+    }
+    .what-we-do-btn img{
+        position: relative;
+        width: 120%;
+        transform: translate(-2%, 0%);
+    }
+    .what-we-do-text{
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        max-height: 50px;
+        background-color: rgb(54, 54, 54); 
+        text-align: center;  
+        color: white;
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(1,163,212,0.4);;
+    }
+    .footer-div{
+        text-align: center;
+
+    }
+
+
+
+
+
+
+
+
+    /* Media screens */
+    @media only screen and (max-width: 1000px) {
+        .what-we-do-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 2px;
+            grid-row-gap: 12px;
+            margin: 120px auto;
+            width: 75%;
+            justify-items: center;
+            align-items: center;
+            margin-top: 30px;
+            }
+      }
+
+
+
+
+
+
+
+
+
+
+      @media only screen and (max-width: 675px) {
+        .what-we-do-wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 2px;
+            grid-row-gap: 12px;
+            margin: 120px auto;
+            width: 75%;
+            justify-items: center;
+            align-items: center;
+            margin-top: 30px;
+            }
+            .about-us-home{
+                text-align: center;
+                font-size: 1.5rem;
+                width: 80%;
+                margin: 0 auto;        
+            }
+            .desktop-head-wrapper{
+                display: none;
+            }
+      }
